@@ -1,7 +1,7 @@
 import React from "react";
 import { showFormattedDate } from "../utils";
 
-function NoteItem({ note, onDelete, onArchive, serachKeyword = ''}) {
+function NoteItem({ note, serachKeyword = ''}) {
     const highlightText = (text, keyword) => {
         if (!keyword || !keyword.trim()) return text;
 
@@ -29,3 +29,5 @@ function NoteItem({ note, onDelete, onArchive, serachKeyword = ''}) {
         </div>
     )
 }
+
+export default NoteItem;
