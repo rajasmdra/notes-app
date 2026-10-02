@@ -1,7 +1,7 @@
 import React from "react";
 import { showFormattedDate } from "../utils";
 
-function NoteItem({ note, serachKeyword = ''}) {
+function NoteItem({ note, searchKeyword = ''}) {
     const highlightText = (text, keyword) => {
         if (!keyword || !keyword.trim()) return text;
 
@@ -18,13 +18,13 @@ function NoteItem({ note, serachKeyword = ''}) {
     return (
         <div className="note-item">
             <h3 className="note-item__title">
-                {highlightText(note.title, serachKeyword)}
+                {highlightText(note.title, searchKeyword)}
             </h3>
             <p className="note-item__date">
                 {showFormattedDate(note.createdAt)}
             </p>
             <p className="note-item__body">
-                {highlightText(note.body, serachKeyword)}
+                {highlightText(note.body, searchKeyword)}
             </p>
         </div>
     )
