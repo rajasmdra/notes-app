@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import HomePage from './pages/HomePage';
-import ArchivedPage from './pages/ArchivedPage';
+import NotesPageWrapper from './pages/NotesPage';
+
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<HomePage />}/>
-          <Route path='/archived' element={<ArchivedPage />}/>
+          <Route path='/' element={<NotesPageWrapper archived={false}/>}/>
+          <Route path='/archived' element={<NotesPageWrapper archived={true}/>}/>
         </Routes>
       </main>
     </div>
