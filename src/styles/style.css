@@ -137,6 +137,13 @@ main {
   -webkit-box-orient: vertical;
 }
 
+mark {
+  background-color: rgba(255, 241, 118, 0.3);
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
 .detail-page {
   margin: 0 auto;
   margin-top: 32px; 
