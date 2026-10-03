@@ -81,12 +81,11 @@ class NoteInput extends React.Component {
                     required
                 />
                 <div className="add-new-page__action">
-                    <button 
-                        className="action"
-                        type="submit"
-                    >
-                        <FiCheck />
-                    </button>
+                    <ActionButton 
+                        type="submit" 
+                        title="Simpan" 
+                        icon={<FiCheck />} 
+                    />
                 </div>
             </form>
         )
