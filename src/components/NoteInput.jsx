@@ -1,5 +1,6 @@
 import React from "react";
 import { FiCheck } from "react-icons/fi";
+import ActionButton from "./ActionButton";
 
 class NoteInput extends React.Component {
     constructor(props) {

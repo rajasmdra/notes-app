@@ -1,6 +1,7 @@
 import React from "react";
 import { FiArchive, FiRotateCcw, FiTrash2 } from "react-icons/fi";
 import { showFormattedDate } from "../utils";
+import ActionButton from "./ActionButton";
 
 function NoteDetail({ note, onDelete, onArchive }) {
     return (
