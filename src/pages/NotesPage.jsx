@@ -2,7 +2,8 @@ import React from "react";
 import NotesList from "../components/NotesList";
 import { getActiveNotes, getArchivedNotes } from "../utils/local-data"
 import SearchBar from "../components/SearchBar";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
+import { FiPlus } from "react-icons/fi";
 
 function NotesPageWrapper(props) {
     const [ searchParams, setSearchParams ] = useSearchParams();
@@ -68,6 +69,11 @@ class NotesPage extends React.Component {
                     notes={filteredNotes}
                     searchKeyword={this.state.keyword}
                 />
+                <div className="homepage__action">
+                    <Link to='/add' className="action">
+                        <FiPlus />
+                    </Link>
+                </div>
             </section>
         )
     }
