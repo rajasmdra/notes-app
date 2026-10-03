@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function ActionButton({ title, onClick, icon }) {
+function ActionButton({ title, onClick, icon, type = "button" }) {
     return (
         <button 
             className="action" 
-            type="button" 
+            type={type} 
             title={title} 
             onClick={onClick}
         >
